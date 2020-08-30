@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Portals</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="navbar">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <strong>Login Portals</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+          aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Full Page Intro -->
+    <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+              <h1 class="h1-responsive font-weight-bold mt-sm-5">Easy recruitment with our app</h1>
+              <hr class="hr-light">
+              <h6 class="mb-4">By using this app, students can apply to jobs with their profile. Faculty checks whether student entered correct details or not. Recruiter can recruit selected candidates
+                .Click on the below buttons for login</h6>
+              
+              <a class="btn btn-outline-white" data-toggle="modal" data-target="#studentform">Student</a>
+              <a class="btn btn-outline-white" data-toggle="modal" data-target="#facultyform">Faculty</a>
+              <a class="btn btn-outline-white" data-toggle="modal" data-target="#recruiterform">Recruiter</a>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+              <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png" alt="" class="img-fluid">
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+  </header>
+  <!-- Main navigation -->
+
+    
+  <!--Student modal-->
+  <!-- Modal -->
+<div class="modal fade" id="studentform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <!--Content-->
+  <div class="modal-content form-elegant">
+    <!--Header-->
+    <form action="studentlogin.php" method="post">
+        <div class="modal-header text-center">
+            <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Student Sign in</strong></h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--Body-->
+          <div class="modal-body mx-4">
+            <!--Body-->
+            <div class="md-form mb-5">
+              <input type="text" id="sid" name="sid" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="sid">Student ID</label>
+            </div>
+      
+            <div class="md-form pb-3">
+              <input type="password" id="spass" name="spass" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="spass">Password</label>
+              
+            </div>
+      
+            <div class="text-center mb-3">
+              <button  class="btn blue-gradient btn-block btn-rounded z-depth-1a" type="submit">Sign in</button>
+            </div>
+          </div>
+      
+          </div>
+    </form>
+   
+  </div>
+  <!--/.Content-->
+</div>
+</div>
+<!-- Modal -->
+  <!--End of student modal-->
+
+  <!--Faculty modal-->
+    <!-- Modal -->
+<div class="modal fade" id="facultyform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <!--Content-->
+  <div class="modal-content form-elegant">
+    <!--Header-->
+    <form action="facultylogin.php" method="post">
+        <div class="modal-header text-center">
+            <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Faculty Sign in</strong></h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--Body-->
+          <div class="modal-body mx-4">
+            <!--Body-->
+            <div class="md-form mb-5">
+              <input type="text" id="fid" name="fid" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="fid">Faculty ID</label>
+            </div>
+      
+            <div class="md-form pb-3">
+              <input type="password" id="fpass" name="fpass" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="fpass">Password</label>
+              
+            </div>
+      
+            <div class="text-center mb-3">
+              <button type="submit" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+            </div>
+            
+      
+          </div>
+    </form>
+    
+  </div>
+  <!--/.Content-->
+</div>
+</div>
+<!-- Modal -->
+  <!--End of faculty modal-->
+
+  <!--Recruiter modal-->
+  <!-- Modal -->
+<div class="modal fade" id="recruiterform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <!--Content-->
+  <div class="modal-content form-elegant">
+    <!--Header-->
+    <form action="recruiterlogin.php" method="post">
+        <div class="modal-header text-center">
+            <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Recruiter Sign in</strong></h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!--Body-->
+          <div class="modal-body mx-4">
+            <!--Body-->
+            <div class="md-form mb-5">
+              <input type="text" id="rid" name="rid" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="rid">Recruiter Username</label>
+            </div>
+      
+            <div class="md-form pb-3">
+              <input type="password" id="rpass" name="rpass" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="rpass">Password</label>
+              
+            </div>
+      
+            <div class="text-center mb-3">
+              <button type="submit" class="btn blue-gradient btn-block btn-rounded z-depth-1a">Sign in</button>
+            </div>
+            
+      
+            
+          </div>
+    </form>
+    <!--Footer-->
+   
+  </div>
+  <!--/.Content-->
+</div>
+</div>
+<!-- Modal -->
+  <!--End of recruiter modal-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
+</body>
+</html>
